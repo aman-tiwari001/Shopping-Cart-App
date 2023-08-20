@@ -2,13 +2,22 @@
   position: sticky;
   box-shadow: 0px 10px 20px #ccc;
   margin-bottom: 10px;
+  background:  rgb(233, 7, 120);
+  color: white;
 }
 .header-ul {
   display: flex;
   flex: 1;
   justify-content: space-between;
+  align-items: center;
 }
 .header-h2 {
   font-family: monospace;
   font-size: 30px;
+}
+.logout {
+  background: yellow;
+  color: black;
+  border-radius: 10px;
+  font-size: 16px;
 }

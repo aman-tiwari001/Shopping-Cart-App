@@ -1,40 +1,48 @@
 import React from "react";
 import Product from "./Product";
+import { useSelector } from "react-redux";
 const DUMMY_PRODUCTS = [
   {
     id: 1,
-    name: "MacBook",
+    name: "Apple MacBook Air",
     imgURL:
-      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGFwdG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    price: 25,
+      "https://cdn1.smartprix.com/rx-iXMsgRkkm-w1200-h1200/XMsgRkkm.jpg",
+    price: 1300,
   },
   {
     id: 2,
-    name: "Lenovo Yoga",
+    name: "Samsung S23 Ultra",
     imgURL:
-      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGFwdG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    price: 25,
+      "	https://m.media-amazon.com/images/I/61imYpK33qL.jpg",
+    price: 900,
   },
   {
     id: 3,
-    name: "Dell lattitude",
+    name: "Boat Smart Watch",
     imgURL:
-      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGFwdG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    price: 25,
+      "https://m.media-amazon.com/images/I/61RPXUwgCjL.jpg",
+    price: 50,
   },
   {
     id: 4,
-    name: "HP Pavillion",
+    name: "Apple iPad Pro",
     imgURL:
-      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGFwdG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    price: 25,
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzXYN13Y_OMypUBxti67JJLo-dowh3AzMVMjP5-8wvCwZ1GR_TxkXpdQo4mD3oS4M3rXA&usqp=CAU",
+    price: 750,
   },
   {
     id: 5,
-    name: "Acer Aspire",
+    name: "Boat Earpods",
     imgURL:
-      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGFwdG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    price: 25,
+      "https://www.boat-lifestyle.com/cdn/shop/products/c2386af9-4349-432f-8ba5-2b6aa06025c8_600x.png?v=1668756103",
+    price: 45,
+  },
+  {
+    id: 6,
+    name: "Sony Smart TV",
+    imgURL:
+      "https://static.digit.in/default/8b6f50dd2de38e5108ad6e9e3455da9ebc8dab59.jpeg?tr=w-1200",
+    price: 500,
   },
 ];
 const Products = () => {

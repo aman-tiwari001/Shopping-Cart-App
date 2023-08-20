@@ -17,18 +17,22 @@ button {
   background-color: rgba(21, 26, 42, 0.787);
 }
 .card {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   display: flex;
   padding: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   box-shadow: 5px 5px 10px #ccc;
+  border-radius: 10%;
+  border: 2px solid yellow;
+  background: rgb(253, 137, 195);
 }
 .card img {
-  width: 90%;
-  height: 40%;
+  width: 80%;
+  height: 50%;
+  border-radius: 10px;
 }
 .card > p {
   padding: 10px;
@@ -40,10 +44,26 @@ button {
 
 .orderBtn {
   width: 200px;
-  background: orangered;
+  background: yellow;
   border: none;
   cursor: pointer;
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
 }
 .orderBtn:hover {
-  background: rgb(89, 0, 190);
+  background: gold;
+}
+
+.addcart {
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  background: yellow;
+  color: black;
+}
+
+.addcart:hover {
+  background: gold;
 }
